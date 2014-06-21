@@ -1,0 +1,203 @@
+"""
+Function definitions. Extra indentation is needed.
+"""
+def function(
+            var1, var2, var3, var4,
+            var5, var6):
+    print "Different indentation level"
+
+"""
+Function call. Extra indentation is needed.
+"""
+function(
+        var1, var2, var3, var4,
+        var5, var6)
+
+"""
+Multi-line if-else indentation. Extra indentation is not needed.
+"""
+if (a and b
+    and c and d):
+    print "Inside IF Loop"
+
+"""
+Closing parentheses for initialized variables among others (do not know what)
+"""
+python_list = [
+    1, 2, 3,
+    4, 5, 6
+]
+
+python_dict = {
+    'key1':'val1', 'key2':'val2',
+    'key3':'val3', 'key4':'val4'
+}
+
+"""
+Command line switches to be used while running python code
+"""
+tt  Throws an error IF tabs and spaces are mixed while indenting code.
+
+"""
+Maximum line length
+"""
+
+79 characters inclusive of line breaks. Take care while writing code over
+multiple lines.
+72 characters for Python Docstrings.
+
+"""
+Word wrap
+"""
+- Ideally use parentheses and spacing to make it happen naturally.
+- If not, and it has to be multiline use backslashes but minimize its use.
+
+with open('longpath/file1') as file_1, \
+        open('longpath/file2') as file_2:
+            file_2.write(file_1.read())
+
+"""
+Line break after the operator (and,or)
+"""
+def func():
+    if (a and b and
+        c and d):
+    if (A or B or
+        C or D):
+
+"""
+Use newlines logically.
+"""
+class booClass
+
+
+def classFunc1():
+    print "Inside func1"
+
+def classFunc2():
+    print "Inside func2"
+
+"""
+Encoding should always be UTF-8
+"""
+Set encoding globally to UTF-8 on your system. So any editor you use will
+display characters using that encoding. On Linux set the environment variable
+$LANG.
+
+"""
+Imported modules should be on separate lines. If you import only specific
+submodules, they can be on the same line.
+
+Logically separate System imports, thirdparty imports and your own custom
+imports by a new line each.
+
+Use absolute paths for custom imports as far as possible.
+
+DO NOT use wildcard imports.
+"""
+import os
+import sys
+from subprocess import Popen,PIPE
+
+import bouncycastle.ssl
+
+import com.mypackage.mylibrary1
+import com.mypackage.mylibrary2
+
+#from module import *
+
+def method1:
+
+def method2:
+
+"""
+Use spaces well between brackets, punctuations, variables and operators.
+Dont use spaces inside arguments with the = operator.
+"""
+
+list=['a', 'b']
+dict={'a':'va', 'b':'vb'}
+
+if a==1 and b==2:
+    print a, b
+
+a = 1
+b = 2
+cccc = 34
+
+i = i + 2
+i += 1
+if i == 4:
+    print i
+c = (a+b) * (a-b)
+if (a and b) or (c and d):
+    print a, b, c, d
+def func(a, b=0):
+    print 'Inside func'
+
+"""
+No compound statements. Statements with similar functionality always on
+separate lines.
+"""
+
+import sys
+import os
+import re
+
+i=1
+j=2
+
+"""
+Comments should always be full sentences with a capital first word. End with a
+fullstop. If you start a new comment, use 2 spaces after the end of the
+sentence. Single space after the # before you start your comment.
+
+Don't use inline comments unless absolutely necessary and don't state the
+obvious stuff.
+"""
+
+# This is a comment.
+# This is a comment.  And here is a continuation of the comment.
+
+"""
+Naming conventions.
+
+l, o, i should not be ever used as variable names.
+
+Module names should be lowercase without underscores if possible.
+
+Class names should use CamelCase.
+
+Exception names should use CamelCase.
+
+Global variables should ideally be used inside a single module. Names of global
+variables should be lowercase without underscores if possible.
+
+Function names should be lowercase without underscores if possible.
+
+Constants are all CAPS separated by underscores if possible.
+
+Classes and interfaces NOT DISCUSSED RIGHT NOW. Will fill this up when I learn
+to use them better.
+"""
+module modulename
+class ClassName
+Exception RaiseError
+global globvar
+def function:
+CONST_AGE = 42
+
+"""
+Programming recommendations.
+"""
+
+Do not break other implementations of Python. (Do this on a case by case basis)
+if a is None:
+if b is not None:
+if a:
+if not b:
+if isinstance(obj, int):
+Mention specific Exceptions as far as you can
+Use with to ensure all resources are cleant up as soon as possible
+If overriding eq, also override all the other operations, even if its with a
+blank method. Decorators which generate these blank methods are available.
