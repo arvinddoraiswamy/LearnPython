@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 A loosely organized collection of Python code that I can refer to for finding out how to do things without having to google every time. Focus is
 on writing code:
 -- With the right style (PEP8)
@@ -12,4 +11,3 @@ LearnPython
 ===========
 
 A place to store all my progress on Python as I learn it better.
->>>>>>> 63577aab67dee4f92758a69bde5cf0896c1b34c7
