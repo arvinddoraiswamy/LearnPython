@@ -1,1 +1,18 @@
-1.py    |   Nested for loops, list comprehensions, map, filter, reduce
+https://stackoverflow.com/questions/2573135/python-progression-path-from-apprentice-to-guru
+
+- List comprehensions - Done
+- map, reduce, filter, range, xrange - Done
+- Different types of iterators - Done
+- Discover generators - Done
+- Break and continue - Done
+- Custom iterators - In Progress
+- Discover Decorators
+- Write recursive functions, a lot
+- Discover itertools and functools
+
+1.py    |   Nested for loops, list comprehensions
+2.py    |   map, filter, reduce, range, xrange
+3.py    |   Learning to iterate better
+4.py    |   Generators
+5.py    |   Break and continue
+6.py    |   Custom iterators
