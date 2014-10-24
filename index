@@ -5,7 +5,7 @@ https://stackoverflow.com/questions/2573135/python-progression-path-from-apprent
 - Different types of iterators - Done
 - Discover generators - Done
 - Break and continue - Done
-- Custom iterators - In Progress
+- Classes and custom iterators - In Progress
 - Discover Decorators
 - Write recursive functions, a lot
 - Discover itertools and functools
@@ -15,4 +15,4 @@ https://stackoverflow.com/questions/2573135/python-progression-path-from-apprent
 3.py    |   Learning to iterate better
 4.py    |   Generators
 5.py    |   Break and continue
-6.py    |   Custom iterators
+6.py    |   Classes and custom iterators
