@@ -7,7 +7,6 @@ https://stackoverflow.com/questions/2573135/python-progression-path-from-apprent
 - Break and continue - Done
 - Classes and custom iterators - Done
 - Discover itertools - Done
-- Discover functools - In Progress
 
 1.py    |   Nested for loops, list comprehensions
 2.py    |   map, filter, reduce, range, xrange
@@ -16,4 +15,3 @@ https://stackoverflow.com/questions/2573135/python-progression-path-from-apprent
 5.py    |   Break and continue
 6.py    |   Classes and custom iterators
 7.py    |   Itertools
-8.py    |   Functools
