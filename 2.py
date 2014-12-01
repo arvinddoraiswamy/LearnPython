@@ -79,3 +79,12 @@ python -m timeit 'for i in xrange(1000000):' ' pass'
 print "Simple usage of xrange. Xrange though apparently is NOT there in Python 3 so use range:\n"
 for i in xrange(0,4):
     print i
+
+"""
+Takes the first and second list and combines their elements together and returns a tuple.  The process continues till the length of the shortest 
+list is reached.
+"""
+l1= [1, 2]
+l2= [3, 4]
+print "\nSimple usage of zip\n"
+print zip(l1, l2)

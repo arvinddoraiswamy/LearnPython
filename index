@@ -1,19 +1,11 @@
 https://stackoverflow.com/questions/2573135/python-progression-path-from-apprentice-to-guru
 
-- List comprehensions - Done
-- map, reduce, filter, range, xrange, zip - Done
-- Different types of iterators - Done
-- Discover generators - Done
-- Break and continue - Done
-- Classes and custom iterators - Done
-- Discover itertools - Done
-- Commonly used built-in functions - Done
-
 1.py    |   Nested for loops, list comprehensions
-2.py    |   map, filter, reduce, range, xrange
+2.py    |   map, filter, reduce, range, xrange, zip
 3.py    |   Learning to iterate better
 4.py    |   Generators
-5.py    |   Break and continue
+5.py    |   Break, continue and pass
 6.py    |   Classes and custom iterators
 7.py    |   Itertools
 8.py    |   Commonly used built-in functions
+9.py    |   Functions that accept arbitrary numbers of arguments

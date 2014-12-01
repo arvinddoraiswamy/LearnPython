@@ -57,3 +57,13 @@ for a, b, c in get_all_values(list1, list2, list3):
         print "Found the '#' character, lets get out of the loop now. 'break' will work well here."
         print "Values of a, b and c are "+str(a)+':'+b+':'+c
         break
+
+"""
+A do nothing statement. When you need to have a loop for syntax purposes only, but nothing inside its something you can use.
+"""
+print "Simple example demonstrating how pass works"
+for i in range(0, 4):
+    if i < 2:
+        pass
+    else:
+        print i
