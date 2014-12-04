@@ -9,3 +9,5 @@ https://stackoverflow.com/questions/2573135/python-progression-path-from-apprent
 7.py    |   Itertools
 8.py    |   Commonly used built-in functions
 9.py    |   Functions that accept arbitrary numbers of arguments
+10.py   |   Lists, Sets, FrozenSets, Tuples, Dictionaries, Queues, Strings
+11.py   |   Files
