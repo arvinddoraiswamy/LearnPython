@@ -181,3 +181,19 @@ print d1.keys()
 
 print 'Delete a dictionary'
 del d1
+
+print 'Rotate left or right using a collection'
+l1= '123456'
+import collections
+c1= collections.deque(l1)
+
+print 'Original collection'
+print c1
+
+print 'Collection rotated 3 places to the left'
+c1.rotate(-3)
+print c1
+
+print 'Collection rotated 3 places to the right, back to its original postion'
+c1.rotate(3)
+print c1
