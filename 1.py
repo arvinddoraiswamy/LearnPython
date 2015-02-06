@@ -18,3 +18,11 @@ print "\nMultiplication using list comprehensions\n"
 result = [x1 * y1 for x1 in i for y1 in j]
 print result
 
+
+"""
+Using dictionary comprehensions to do the same thing as above but with a dictionary instead.
+"""
+print "Creating a new dictionary\n"
+d1= {'a':1, 'b':2, 'c':3}
+d2= {key: key+str(value) for key, value in d1.items()}
+print d2.keys()

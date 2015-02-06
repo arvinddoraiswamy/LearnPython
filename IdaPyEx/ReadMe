@@ -1,0 +1,12 @@
+How To Run
+----------
+
+Here is how to run the script against the IDB. If the program is a 64 bit program the extension is i64 and you have to use the 64 bit IDA to
+disassemble it. The result of the script will be stored in the file log.txt. Every subsequent run will append to the file.
+
+C:\IdaPythonExamples> idaw64 -A -L"log.txt" -Sidautils_examples.py testprogram.i64
+
+Unclear APIs in IDAPython
+-------------------------
+
+idautils.peutils_t

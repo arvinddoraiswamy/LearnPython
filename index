@@ -1,6 +1,6 @@
 https://stackoverflow.com/questions/2573135/python-progression-path-from-apprentice-to-guru
 
-1.py    |   Nested for loops, list comprehensions
+1.py    |   Nested for loops, list comprehensions, Dictionary comprehensions
 2.py    |   map, filter, reduce, range, xrange, zip
 3.py    |   Learning to iterate better
 4.py    |   Generators
@@ -11,3 +11,8 @@ https://stackoverflow.com/questions/2573135/python-progression-path-from-apprent
 9.py    |   Functions that accept arbitrary numbers of arguments
 10.py   |   Lists, Sets, FrozenSets, Tuples, Dictionaries, Queues, Strings, Collections
 11.py   |   Files
+12.py   |   Handling command line arguments
+13.py   |   PE files
+14.py   |   IDA Python API usage
+15.py   |   Exceptions
+16.py   |   Regex
