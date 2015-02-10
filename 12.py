@@ -12,4 +12,5 @@ def get_cli_arguments():
     return args.file, args.s
 
 value_arg_file, value_arg_s= get_cli_arguments()
+print "Here are the command line arguments passed to the program"
 print value_arg_file, value_arg_s
