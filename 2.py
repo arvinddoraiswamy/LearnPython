@@ -66,6 +66,10 @@ print "Simple usage of range:\n"
 for i in range(0,4):
     print i
 
+print "Simple usage of range with step:\n"
+for i in range(0,10,3):
+    print i
+
 """
 XRange - Same as range but better performance wise while iterating through large lists.
 

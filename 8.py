@@ -1,3 +1,11 @@
+from __future__ import division
+"""
+If you want to divide floating point numbers, have this at the start of your file
+"""
+x= 5.2/2
+print x
+
+
 """
 This is just a list of a number of built in functions that Python uses.
 """
@@ -89,3 +97,9 @@ Print sorted version of a list
 """
 print "Sort a list - you can pass a function to this to customize your sorting"
 print sorted(l2, key=str.lower)
+
+"""
+Convert negative numbers to positive
+"""
+print "Convert all negative results to positive while displaying"
+print abs(-4)

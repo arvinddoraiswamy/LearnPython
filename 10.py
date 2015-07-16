@@ -114,7 +114,7 @@ else:
 String methods.
 """
 
-s1= 'abcdef'
+s1= 'xabcdef'
 s2= '41424344'
 
 print "Convert string to sentence case"
@@ -140,7 +140,17 @@ print "Pad a string"
 print s2.ljust(10,'0')
 
 print "Strip characters from string"
-print s1.strip('xfe')
+print s1.lstrip('xfe')
+print s1.rstrip('xfe')
+
+print "Left Pad a string with a specific character"
+s1= 'ab'
+print s1.zfill(4)
+
+print "Right Pad a string with a specific character"
+s1= 'ab'
+print s1.ljust(4,'x')+'ok'
+print s1.rjust(4,'x')+'ok'
 
 """
 Dictionaries
@@ -197,3 +207,9 @@ print c1
 print 'Collection rotated 3 places to the right, back to its original postion'
 c1.rotate(3)
 print c1
+
+print 'Substrings with and without steps'
+s1= 'abcdef'
+print s1[0:2]
+print s1[0::2]
+print s1[::-2]

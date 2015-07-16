@@ -8,6 +8,8 @@ Anytime you want to do something repetitively with something which has data in P
 using any of the techniques in this file to a list or something you can iterate over.
 """
 
+import operator
+
 #Iterate over a list
 mylist = ['a', 'b', 'c', 'd']
 for letter in mylist:
@@ -22,19 +24,27 @@ for i,v in enumerate(mylist, start=1):
 for c in "Hello":
     print c
 
-#Iterate over a dictionary getting only keys, only values, both or both in sorted form
-dict1 = {'key1':1, 'key2':2, 'key3':3}
+#Iterate over a dictionary getting only keys, only values, both or both in sorted form (sorted by key which is default, or by value using itemgetter())
+dict1 = {'key1':4, 'key2':2, 'key3':3}
 
+print "Keys only"
 for key in dict1:
     print key
 
+print "Values only"
 for value in dict1.itervalues():
     print value
 
+print "Keys and values"
 for key, value in dict1.iteritems():
     print key+':'+str(value)
 
+print "Keys and values sorted by key"
 for key, value in sorted(dict1.iteritems()):
+    print key+':'+str(value)
+
+print "Keys and values sorted by value"
+for key, value in sorted(dict1.items(), key=operator.itemgetter(1)):
     print key+':'+str(value)
 
 #Iterate over the lines of a file

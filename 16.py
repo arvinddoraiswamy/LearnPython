@@ -51,3 +51,29 @@ Substitute a pattern in a string with a new pattern
 """
 s2= re.sub('test','ball',string1)
 print s2
+
+"""
+Regex character classes
+"""
+string4= 'cdddbcdef this bLAH Boo 123 456'
+m1= re.search(r'[abcdefghijklmnopqrstuvwxyz]*', string4)
+print "Character classes - Any character between a and z, case sensitive, 0 or more times. Sees a non-match, it'll stop immediately."
+if m1:
+    print m1.group()
+
+string4= 'cdddbcdef this bLAH Boo 123 456'
+m1= re.match(r'[a-zA-Z ]*', string4)
+print "Character classes - Any character between a and z and space, case in-sensitive, 0 or more times. Sees a non-match, it'll stop immediately."
+if m1:
+    print m1.group()
+
+m1= re.match(r'[^b]+', string4)
+print "Character classes - Negation of the example (Negates 'b' just above). The ^ inside a character class acts as a negation. You CANNOT negate a set though. The moment you hit a non-match though, it'll stop matching immediately."
+if m1:
+    print m1.group()
+
+string4= 'a+b=c'
+m1= re.search(r'[a+]*', string4)
+print "Character classes - Match special characters inside a character class. Inside a char class special characters are treated normally Sees a non-match, it'll stop immediately."
+if m1:
+    print m1.group()
