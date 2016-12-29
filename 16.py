@@ -77,3 +77,10 @@ m1= re.search(r'[a+]*', string4)
 print "Character classes - Match special characters inside a character class. Inside a char class special characters are treated normally Sees a non-match, it'll stop immediately."
 if m1:
     print m1.group()
+
+''' Escape string before matching things. Added backslashes in front of special characters. '''
+pattern= "(.*)'.*"
+s5= "xxx\'bb"
+print s5, re.escape(pattern), re.escape(s5)
+m1= re.match(pattern, s5)
+print 'Escaped match', m1.group(1)

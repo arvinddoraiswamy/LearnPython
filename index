@@ -16,9 +16,10 @@ https://stackoverflow.com/questions/2573135/python-progression-path-from-apprent
 14.py   |   IDA Python API usage
 15.py   |   Exceptions
 16.py   |   Regex
-17.py   |   Binary data
-18.py   |   HTTP requests
-19.py   |   ZipFile
-20.py   |   os
-21.py   |   Crypto
-22.py   |   Hashlib
+17.py   |   Binary data (Struct, Binascii)
+18.py   |   Bisect
+19.py   |   HTTP requests
+20.py   |   ZipFile
+21.py   |   os
+22.py   |   Crypto
+23.py   |   Hashlib
