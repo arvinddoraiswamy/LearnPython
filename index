@@ -18,8 +18,9 @@ https://stackoverflow.com/questions/2573135/python-progression-path-from-apprent
 16.py   |   Regex
 17.py   |   Binary data (Struct, Binascii)
 18.py   |   Bisect
-19.py   |   HTTP requests
-20.py   |   ZipFile
-21.py   |   os
-22.py   |   Crypto
-23.py   |   Hashlib
+19.py   |   Collections
+20.py   |   HTTP requests
+21.py   |   ZipFile
+22.py   |   os
+23.py   |   Crypto
+24.py   |   Hashlib

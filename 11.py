@@ -28,6 +28,11 @@ with open('foo.txt') as f:
     for i in s2:
         print i
 
+print "Read whole file as lines but without the extra newline character that readlines() gives you"
+with open('foo.txt') as f:
+    x= f.read().splitlines()
+print x
+print
 
 print "Writing a certain number of lines to a file"
 with open('blah.txt', 'w') as f:
