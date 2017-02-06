@@ -20,7 +20,6 @@ https://stackoverflow.com/questions/2573135/python-progression-path-from-apprent
 18.py   |   Bisect
 19.py   |   Collections
 20.py   |   HTTP requests
-21.py   |   ZipFile
-22.py   |   os
-23.py   |   Crypto
-24.py   |   Hashlib
+21.py   |   os
+22.py   |   Hashlib
+23.py   |   Subprocess
