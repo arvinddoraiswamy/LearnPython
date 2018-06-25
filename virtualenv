@@ -1,0 +1,9 @@
+If you have 2 projects but both need different versions of Python and associated libraries then you can't just install both versions and libraries on the system and run both your projects. There's a high chance that one/both of them won't work properly at all. Sure, maybe you could hack around and make both work together - but there's a much simpler option in virtualenv.
+
+Virtualenv is a sandbox of sorts where it creates a container into which you can install Python and its libraries for each of the applications. Both containers can co-exist together and you don't need to install anything on your system, keeping things much cleaner. Getting started is really easy too:
+
+- pip install virtualenv
+- virtualenv code1
+- source code1/bin/activate
+
+Now you're inside the sandbox and can do whatever you want inside here without touching the rest of the system.
