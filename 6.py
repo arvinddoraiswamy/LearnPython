@@ -17,7 +17,7 @@ method that the iterator has.
 iterator = iter(list1)
 iterator.next()
 iterator.next()
-print iterator.next()
+print(iterator.next())
 
 """
 Writing your own custom iterators is so you can iterate through them and perform whatever operations you want to
@@ -56,7 +56,7 @@ class Test:
     These methods can be invoked by an object as usual.
     """
     def additionalmethod(self):
-        print "You can define additional methods here and call that normally"
+        print("You can define additional methods here and call that normally")
 
 for i in Test(1):
     """
@@ -64,7 +64,11 @@ for i in Test(1):
         called next().
         Use format strings instead of concatenating and using str() or repr() to print things.
     """
-    print "Value of i is %s" %i
+    print("Value of i is %s" %i)
+    print("test", 123)
+
+    print "For python 3 you can use a separator here. Look at the comments for the syntax"
+    # print("test", 123, sep=':')
 
 t1 = Test(0)
 t1.additionalmethod()

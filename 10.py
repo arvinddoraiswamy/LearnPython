@@ -152,6 +152,12 @@ s1= 'ab'
 print s1.ljust(4,'x')+'ok'
 print s1.rjust(4,'x')+'ok'
 
+print "Swap string characters"
+a="abc"
+b=list(a)
+(b[0], b[1]) = (b[1], b[0])
+print ''.join(b)
+
 """
 Dictionaries
 """

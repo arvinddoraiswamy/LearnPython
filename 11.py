@@ -2,6 +2,12 @@ import os
 """
 Opening and transparently closing a file
 """
+file_path = '/etc/passwd'
+print "Does file exist at all?"
+if os.path.exists(file_path):
+    print "File exists"
+else:
+    print "File does not exist"
 
 print "Open a file. Since you use 'with' you don't need to explicitly close it with f.close()"
 with open('foo.txt') as f:
@@ -44,3 +50,4 @@ l1=['a', 'b', 'c']
 with open('blah.txt', 'a') as f:
     print "Write a sequence of strings to the file. Make sure that you close any previous handles before writing content"
     f.writelines(l1)
+

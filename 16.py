@@ -84,3 +84,17 @@ s5= "xxx\'bb"
 print s5, re.escape(pattern), re.escape(s5)
 m1= re.match(pattern, s5)
 print 'Escaped match', m1.group(1)
+
+""" Search multiple patterns """
+p1 = "\W"
+p2 = "\d+"
+p3 = "abc.*"
+
+string5 = "abctest"
+string4= 'cdddbcdef this bLAH Boo 123 456'
+print("search multiple patterns in 1 regex")
+print(re.compile("(%s|%s|%s)" % (p1, p2, p3)).findall(string5))
+m2 = re.search('test|blah', string4, re.IGNORECASE)
+if m2:
+    print "Multiple OR patterns"
+    print m2.group()

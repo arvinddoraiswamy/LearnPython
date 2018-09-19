@@ -26,6 +26,7 @@ for c in "Hello":
 
 #Iterate over a dictionary getting only keys, only values, both or both in sorted form (sorted by key which is default, or by value using itemgetter())
 dict1 = {'key1':4, 'key2':2, 'key3':3}
+dict2 = {'key1':'40', 'key2':'2', 'key3':'30000'}
 
 print "Keys only"
 for key in dict1:
@@ -46,6 +47,8 @@ for key, value in sorted(dict1.iteritems()):
 print "Keys and values sorted by value"
 for key, value in sorted(dict1.items(), key=operator.itemgetter(1)):
     print key+':'+str(value)
+
+print sorted(dict2.items(), key=operator.itemgetter(1), reverse=True)
 
 #Iterate over the lines of a file
 filename = 'test'
