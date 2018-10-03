@@ -1,4 +1,13 @@
 """
+_ variable
+"""
+print("Using the dummy _ variable in a loop")
+for _ in range(0,5):
+    print("Inside a for loop but I don't use the counter at all")
+print
+
+
+"""
 Iterables - http://nedbatchelder.com/text/iter.html
 """
 
