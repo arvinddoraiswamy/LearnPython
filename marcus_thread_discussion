@@ -1,0 +1,79 @@
+(05:32:49 PM) Arvind: and in other news python generators look really really cool
+(05:33:01 PM) Arvind: been a while since i got excited looking at code lol
+(05:33:08 PM) Arvind: :)
+(05:35:22 PM) Marcus: oh yeah, generators are super cool. :)
+(05:36:29 PM) Arvind: all that junk of iterating, filtering and then appending to a list and returning it back... all gone with just 1 yield statement... and faster .. niceee :)
+(05:37:12 PM) Marcus: yep, generators are so cool many years back i was inspired to write this http://rootfoo.org/blackmamba
+(05:39:24 PM) Arvind: nicee
+(05:39:29 PM) Arvind: so so...question :)
+(05:39:37 PM) Arvind: in the example u show...of the 100 time download
+(05:40:00 PM) Arvind: have you actually compares that to a pthread/thread type bit of code? and timed it?
+(05:40:10 PM) Arvind: is this faster/slower?
+(05:41:05 PM) Marcus: this approach is VASTLY faster than threading, however, probably wouldnt notice for a small number like 100. blackmamba really excells when the number's are in the 1,000,000's
+(05:41:30 PM) Arvind: that is super interesting... coz if u think speed - u think threads
+(05:41:44 PM) Marcus: hehe. that's not entirely true actually
+(05:41:49 PM) Arvind: and everytime i have to google and cry when trying to use them lol
+(05:41:57 PM) Marcus: speed of what? is the question you need to ask
+(05:42:00 PM) Arvind: well lets say I think threads :)
+(05:42:04 PM) Arvind: coz thats all i know
+(05:42:05 PM) Arvind: lol
+(05:42:10 PM) Marcus: nope. not even that
+(05:42:15 PM) Arvind: ha
+(05:42:20 PM) Marcus: question: threads make what faster and why?
+(05:42:30 PM) Arvind: so..
+(05:42:37 PM) Arvind: if i have 1000 lines in a file
+(05:42:37 PM) Marcus: (good computer science question)
+(05:42:51 PM) Arvind: and i want to perform an operation (similar operation) on every one of them
+(05:42:56 PM) Arvind: i'd think of threads
+(05:43:05 PM) Marcus: what kind of operation
+(05:43:06 PM) Arvind: so i can start 50 threads
+(05:43:26 PM) Arvind: hmm .. so i never thought that mattered honestly
+(05:43:32 PM) Marcus: oh yes, it matters :P
+(05:43:33 PM) Arvind: as long as they were all processed in parallel
+(05:43:37 PM) Arvind: ah
+(05:43:53 PM) Arvind: so downloading 1000 files?
+(05:43:57 PM) Arvind: could be a good example
+(05:44:07 PM) Arvind: so 50 downloads (50 threads) start togther?
+(05:44:22 PM) Arvind: instead of linearly iterating through a file?
+(05:44:41 PM) Marcus: afk a sec, brb
+(05:44:44 PM) Arvind: k
+(05:54:39 PM) Arvind: gtr run sorry, miss my train and its a bit of a bike ride to the station
+(05:54:44 PM) Arvind: continue this later :)
+(06:31:04 PM) Arvind: heh there?
+(06:47:49 PM) Marcus: werd
+(06:47:54 PM) Marcus: welcome back
+(06:47:57 PM) Arvind: lol
+(06:48:06 PM) Arvind: and i need to get off in 10 again
+(06:48:17 PM) Arvind: but .. would that be a good example?
+(06:48:24 PM) Marcus: so, performance, there are two thing to understand. I/O bound operations vs computation bound operations
+(06:48:26 PM) Arvind: of the use for threads?
+(06:48:44 PM) Marcus: if you are trying to crack passwords, you need a lot of CPU cores
+(06:48:54 PM) Arvind: hmm
+(06:49:02 PM) Marcus: for every core you have, if you run a thread or a separate process, you get speedup
+(06:49:18 PM) Marcus: a single threaded application on a machine that has 32 cores is only using one of them
+(06:49:42 PM) Marcus: however, when it comes to network I/O or disk I/O, ... how many cpu cores you have is kinda pointless
+(06:49:47 PM) Arvind: hm
+(06:49:49 PM) Marcus: hence, how many thread you are running doesnt really matter
+(06:50:01 PM) Marcus: because 99% of the time is spent waiting to get data back
+(06:50:04 PM) Marcus: just waiting
+(06:50:08 PM) Arvind: see that's intersting...
+(06:50:15 PM) Arvind: coz i once wrote this..
+(06:50:23 PM) Marcus: enter a programming paradigm called "asynchronous" 
+(06:51:02 PM) Marcus: asynchronoous programming really is single threaded, only uses one cpu core, but can manage hundreds of thousands of connections at the same time.
+(06:51:16 PM) Arvind: hmm
+(06:51:23 PM) Marcus: you dont gain anything by having one threat / program PER CONNECTION
+(06:51:32 PM) Marcus: cause then you have 2 threads that are waiting 
+(06:51:36 PM) Arvind: because u wait on all?
+(06:51:37 PM) Arvind: rt
+(06:51:48 PM) Marcus: see the difference?
+(06:51:57 PM) Arvind: yeah
+(06:52:08 PM) Arvind: but do u still not gain something in the parallelism of the whole thing?
+(06:52:18 PM) Marcus: so, computational problems / tasks can be improved by machines with more processors and more threads (or multi-processing)
+(06:52:26 PM) Arvind: like u have 50 urls being worked on at the same time?
+(06:52:29 PM) Marcus: but that's different than networking problems where you have I/O performance bottlenecks
+(06:52:33 PM) Arvind: like i wrote this once - https://github.com/arvinddoraiswamy/mywebappscripts/blob/master/ForceSSL/force_http_req_threaded.py
+(06:52:51 PM) Arvind: and i am so fkin sorry...but i got to get off the train :(
+(06:52:55 PM) Arvind: back later
+(06:52:58 PM) Marcus: bingo, 1 thread, sends 50 requests, and just waits for an answer,... when an answer trickles in... go do something with it
+(06:53:07 PM) Marcus: ttyl
+(06:53:14 PM) Arvind: sorry and thanks :)

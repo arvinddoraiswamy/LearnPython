@@ -49,8 +49,12 @@ print t1
 """
 Substitute a pattern in a string with a new pattern
 """
-s2= re.sub('test','ball',string1)
+s2= re.sub('test','ball',string1, flags=re.IGNORECASE)
 print s2
+print("Regex sub with a group")
+print("Original:", 'tester')
+x=re.sub(r'^t(.*)ter$', r'\1', 'tester')
+print("Subbed:", x)
 
 """
 Regex character classes

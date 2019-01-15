@@ -15,7 +15,7 @@ https://stackoverflow.com/questions/2573135/python-progression-path-from-apprent
 13.py   |   PE files
 14.py   |   IDA Python API usage
 15.py   |   Exceptions
-16.py   |   Regex
+16.py   |   Regex (re)
 17.py   |   Binary data (Struct, Binascii)
 18.py   |   Bisect
 19.py   |   Collections
@@ -26,3 +26,6 @@ https://stackoverflow.com/questions/2573135/python-progression-path-from-apprent
 24.py   |   ConfigParser
 25.py   |   Bitwise operations
 26.py   |   Crypto
+27.py   |   Json
+28.py   |   AWS
+29.py   |   context
